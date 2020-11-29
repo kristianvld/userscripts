@@ -4,7 +4,7 @@ This is a small collection of userscripts that I use and find useful.
 ### What is userscripts?
 Userscripts are small javascript files that can be loaded by browser plugins to provide additional features or change the layout of a website. E.g. a userscript could add dark mode to website that does not have it yet, or remove clutter/banners that you find distracting, or keyboard shortcuts for features you find yourself using often.
 
-To install the userscripts you will need a plugin like Tampermonkey or similar.
+To install the userscripts you will need a plugin like [Tampermonkey](https://www.tampermonkey.net) or similar.
 
 
 ### How to install
