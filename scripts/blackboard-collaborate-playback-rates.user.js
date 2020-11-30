@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         BB Collab PB Rate
 // @namespace    https://github.com/kristianvld
-// @version      1.0
+// @version      1.1
 // @description  Edit video playback speed on blackboard collaborate playback with keyboard shortcuts.
 // @author       kristianvld
 // @match        https://*.bbcollab.com/collab/ui/session/playback*
