@@ -4,8 +4,8 @@
 // @version      1.0
 // @description  Edit video playback speed on blackboard collaborate playback with keyboard shortcuts.
 // @author       kristianvld
-// @match        https://eu-lti.bbcollab.com/collab/ui/session/playback*
-// @match        https://eu-lti.bbcollab.com/recording/*
+// @match        https://*.bbcollab.com/collab/ui/session/playback*
+// @match        https://*.bbcollab.com/recording/*
 // @grant        none
 // ==/UserScript==
 
