@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Panopto Playback Rates
 // @namespace    https://github.com/kristianvld
-// @version      1.0
+// @version      1.1
 // @description  Add shortcuts for more fine controlled playback rates
 // @author       kristianvld
 // @match        https://*.panopto.eu/Panopto/Pages/Viewer.aspx*
@@ -20,6 +20,12 @@
             video.playbackRate -= 0.1;
         } else if (e.key == "0") {
             video.playbackRate = 1;
+        } else if (e.key == "f") {
+            if (document.fullscreenElement) {
+                document.exitFullscreen();
+            } else {
+                document.querySelector(".fp-player").requestFullscreen();
+            }
         } else {
             return;
         }
