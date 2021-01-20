@@ -1,5 +1,5 @@
 # Some useful Userscripts
-This is a small collection of userscripts that I use and find useful.
+A small collection of personal userscripts for everyday use.
 
 ### What is userscripts?
 Userscripts are small javascript files that can be loaded by browser plugins to provide additional features or change the layout of a website. E.g. a userscript could add dark mode to website that does not have it yet, or remove clutter/banners that you find distracting, or keyboard shortcuts for features you find yourself using often.
