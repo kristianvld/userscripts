@@ -1,13 +1,13 @@
 // ==UserScript==
 // @name         Panopto Playback Rates
 // @namespace    https://github.com/kristianvld
-// @version      1.1
+// @version      1.2
 // @description  Add shortcuts for more fine controlled playback rates
 // @author       kristianvld
 // @match        https://*.panopto.eu/Panopto/Pages/Viewer.aspx*
 // ==/UserScript==
 
-(function() {
+(function () {
     'use strict';
 
     document.addEventListener("keydown", (e) => {
@@ -24,12 +24,15 @@
             if (document.fullscreenElement) {
                 document.exitFullscreen();
             } else {
-                document.querySelector(".fp-player").requestFullscreen();
+                const doubleClickEvent = document.createEvent('MouseEvents');
+                doubleClickEvent.initEvent('dblclick', true, true);
+                document.querySelector('.secondaryPlayer').dispatchEvent(doubleClickEvent); // inside method
             }
         } else {
             return;
         }
         video.playbackRate = video.playbackRate.toFixed(2);
+        document.querySelectorAll('video').forEach(v => (v.playbackRate = video.playbackRate));
         feedback.textContent = video.playbackRate + "x";
     });
 })();
